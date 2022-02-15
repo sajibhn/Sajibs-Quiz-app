@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.sajibthedev.sajibsquiz.databinding.ActivityQuizBinding
 
@@ -68,7 +67,7 @@ class QuizActivity : AppCompatActivity() {
                         setQuestion()
                     }
                     else ->{
-                        var intent = Intent(this, ResultActivity::class.java)
+                        val intent = Intent(this, ResultActivity::class.java)
                         intent.putExtra(setData.score, score.toString())
                         intent.putExtra("total size",questionList!!.size.toString())
                         startActivity(intent)
@@ -103,6 +102,7 @@ class QuizActivity : AppCompatActivity() {
             }
         }
     }
+
     //setting question
     private fun setQuestion() {
         val question = questionList!![currentPosition - 1]
