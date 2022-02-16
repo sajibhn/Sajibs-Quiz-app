@@ -1,7 +1,7 @@
 # Sajibs-Quiz-app
 
 
-I have created this android chat app using Kotlin and XML in android studio. 
+I have created this android Quiz app using Kotlin and XML in android studio. 
 
 
 
